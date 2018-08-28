@@ -8,6 +8,7 @@ jobs:
       - run: echo "A first hello"
 
 workflows:
+  version: 2
   testing:
     jobs:
       - build
