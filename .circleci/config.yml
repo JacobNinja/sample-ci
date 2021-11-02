@@ -1,9 +1,8 @@
 version: 2
 jobs:
   build:
-    resource_class: xlarge
-    docker:
-      - image: circleci/ruby:2.4.1-jessie
+    macos:
+      xcode: "12.0.1"
     steps:
       - checkout
       - run: echo "A first hello"
